@@ -87,7 +87,7 @@
       .tabs {
         position: relative;
         display: flex;
-        min-height: 200;
+        min-height: 230;
         border-radius: 10px 10px 0px 0px;
         overflow: hidden;
       }
@@ -161,7 +161,7 @@
 
 
     <p class="h3">Accompaniment Arrangement Demo</p>
-    <p class='text-justify'>Our system specializes in <b><em>multi-track</em></b> accompaniment arrangement for <b><em>whole pieces</em></b> of music.  Given an input lead sheet, it first establishes the rough whole-song structure with a piano accompaniment and then orchestrates the piano into a complete multi-track arrangement. Besides supporting customizable (controllable) band instrumentation, this two-stage approach aligns with musicians' creative workflow. Our demos are presented with three tabs as follows: <em>1) the multi-track arrangement</em>, <em>2) the piano arrangement</em>, and <em>3) the input lead sheet</em>. 
+    <p class='text-justify'>Our system specializes in <b><em>multi-track</em></b> accompaniment arrangement for <b><em>whole pieces</em></b> of music.  Given an input lead sheet, it first establishes the rough whole-song structure with a piano accompaniment and then orchestrates the piano into a complete multi-track arrangement. Besides supporting customizable (controllable) band instrumentation, this two-stage approach aligns with musicians' creative workflow. Our demos are presented with three tabs as follows: 1) <em>the multi-track arrangement</em>, 2) <em>the piano arrangement</em>, and 3) <em>the input lead sheet</em>. 
     </p>
 
     <p class='text-justify'></p>
@@ -623,13 +623,13 @@
 
   <div class="container no-gutter small-padding">
     <p class="h1"><hr class="primary"></p>
-    <p class="h3">Ours <em>v.s.</em> Baselines</p>
+    <p class="h3">Ours vs Baselines</p>
     <p class='text-justify'>We compare our system with three existing methods for accompaniment arrangement: 1) <a href="https://arxiv.org/abs/2008.07703" target="_blank">PopMAG</a>, 2) <a href="https://arxiv.org/abs/2306.08620" target="_blank">Anticipatory Music Transformer (AMT)</a>, and 3) <a href="https://arxiv.org/abs/2305.10841" target="_blank">GETMusic</a>. The first two are Transformer-based and the last one is a diffusion model. The arrangement results are presented with five tabs in the following order: 1) <em>Ours</em>, 2) <em>AMT</em>, 3) <em>GETMusic</em>, 3) <em>PopMAG</em>, and 3) <em>the input lead sheet</em>.
     </p>
 
 
     <p class='text-justify'></p>
-    <p class="h4"><b style="color:#6c06c0;">[VS-01]</b> <b>Temperley Hornpipe</b></p>
+    <p class="h4"><b style="color:#6c06c0;">[Demo-06]</b> <b>Temperley Hornpipe</b></p>
     <ul>
       <li>Genre: Folk</li>
       <li>Length: 24 bars</li>
@@ -744,7 +744,7 @@
     </div>
 
     <p class='text-justify'></p>
-    <p class="h4"><b style="color:#6c06c0;">[VS-02]</b> <b>Boggy Brays</b></p>
+    <p class="h4"><b style="color:#6c06c0;">[Demo-07]</b> <b>Boggy Brays</b></p>
     <ul>
       <li>Genre: Folk</li>
       <li>Length: 32 bars</li>
@@ -859,7 +859,7 @@
     </div>
 
     <p class='text-justify'></p>
-    <p class="h4"><b style="color:#6c06c0;">[VS-03]</b> <b>La Marseillaise</b></p>
+    <p class="h4"><b style="color:#6c06c0;">[Demo-08]</b> <b>La Marseillaise</b></p>
     <ul>
       <li>Genre: March</li>
       <li>Length: 30 bars</li>
@@ -975,7 +975,7 @@
 
 
     <p class='text-justify'></p>
-    <p class="h4"><b style="color:#6c06c0;">[VS-04]</b> <b>Satin Doll</b></p>
+    <p class="h4"><b style="color:#6c06c0;">[Demo-09]</b> <b>Satin Doll</b></p>
     <ul>
       <li>Genre: Jazz</li>
       <li>Length: 32 bars</li>
@@ -1091,7 +1091,7 @@
 
 
     <p class='text-justify'></p>
-    <p class="h4"><b style="color:#6c06c0;">[VS-05]</b> <b>East Dene</b></p>
+    <p class="h4"><b style="color:#6c06c0;">[Demo-10]</b> <b>East Dene</b></p>
     <ul>
       <li>Genre: Folk</li>
       <li>Length: 32 bars</li>
@@ -1207,6 +1207,299 @@
   </div>
 
 
+
+  <div class="container no-gutter small-padding">
+    <p class="h1"><hr class="primary"></p>
+    <p class="h3">Orchestration Demo</p>
+    <p class='text-justify'>The second stage of our system can also work individually as an orchestrator. Given a piano accompaniment score, it specializes in piano-to-<b><em>multi-track</em></b> arrangement for <b><em>whole pieces</em></b> of music, where customizable (controllable) band instrumentation is supported. Our orchestration demos are presented with two tabs as follows: 1) <em>the multi-track arrangement</em>, and 2) <em>the input piano score</em>. 
+    </p>
+
+    <p class='text-justify'></p>
+    <p class="h4"><b style="color:#6c06c0;">[Demo-11]</b> <b>The Moon Represents My Heart</b></p>
+    <ul>
+      <li>Genre: Folk</li>
+      <li>Length: 67 bars</li>
+      <li>BPM: 70</li>
+      <li>Instrumentation: <em style="color: #2ca02c;">Celesta</em>, <em style="color: #07e1e9;">Acoustic guitar</em>, <em style="color: #bcbd22;">Jazz Guitar</em>, <em style="color: #ffbb78;">Electric Piano</em>, <em style="color: #e377c2;">Strings</em>, <em style="color: #ff7f0e;">French Horn</em>, <em style="color: #8c564b;">Clarinet</em>, and <em style="color: #9467bd;">Electric Bass</em>.</li>
+    </ul>
+    <div class="tabs">
+      <div class="tabby-tab">
+        <input type="radio" id="tab-11-1" name="tab-11" checked>
+        <label for="tab-11-1">Multi-Track Arrangement</label>
+        <div class="tabby-content">
+          <div class="orchestration_p1_multitrack">
+            <midi-visualizer 
+              src="demo/orchestration/p1/multitrack.mid"
+              id="orchestration_p1_multitrack-visualizer">
+            </midi-visualizer>
+            <midi-player
+              src="demo/orchestration/p1/multitrack.mid"
+              sound-font="https://musicanticipation.github.io/soundfonts/silence" 
+              visualizer="#orchestration_p1_multitrack-visualizer"
+              id="orchestration_p1_multitrack-player">
+            </midi-player>
+            <audio id="orchestration_p1_multitrack-audio">
+              <source type="audio/mpeg" src="demo/orchestration/p1/Audio Export/multitrack.mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabby-tab">
+        <input type="radio" id="tab-11-2" name="tab-11">
+        <label for="tab-11-2">Piano Score (Input)</label>
+        <div class="tabby-content">
+          <div class="orchestration_p1_piano">
+            <midi-visualizer 
+              src="demo/orchestration/p1/piano.mid"
+              id="orchestration_p1_piano-visualizer">
+            </midi-visualizer>
+            <midi-player
+              src="demo/orchestration/p1/piano.mid"
+              sound-font="https://musicanticipation.github.io/soundfonts/silence" 
+              visualizer="#orchestration_p1_piano-visualizer"
+              id="orchestration_p1_piano-player">
+            </midi-player>
+            <audio id="orchestration_p1_piano-audio">
+              <source type="audio/mpeg" src="demo/orchestration/p1/Audio Export/piano.mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <p class='text-justify'></p>
+    <p class="h4"><b style="color:#6c06c0;">[Demo-12]</b> <b>The Smurfs Theme</b></p>
+    <ul>
+      <li>Genre: Anime</li>
+      <li>Length: 42 bars</li>
+      <li>BPM: 100</li>
+      <li>Instrumentation: <em style="color: #2ca02c;">Celesta</em>, <em style="color: #ffbb78;">Electric Piano</em>, <em style="color: #ff7f0e;">Trumpet</em>, <em style="color: #8c564b;">Strings</em>, <em style="color: #07e1e9;">Acoustic Guitar</em>, and <em style="color: #9467bd;">Electric Bass</em>.</li>
+    </ul>
+    <div class="tabs">
+      <div class="tabby-tab">
+        <input type="radio" id="tab-12-1" name="tab-12" checked>
+        <label for="tab-12-1">Multi-Track Arrangement</label>
+        <div class="tabby-content">
+          <div class="orchestration_p2_multitrack">
+            <midi-visualizer 
+              src="demo/orchestration/p2/multitrack.mid"
+              id="orchestration_p2_multitrack-visualizer">
+            </midi-visualizer>
+            <midi-player
+              src="demo/orchestration/p2/multitrack.mid"
+              sound-font="https://musicanticipation.github.io/soundfonts/silence" 
+              visualizer="#orchestration_p2_multitrack-visualizer"
+              id="orchestration_p2_multitrack-player">
+            </midi-player>
+            <audio id="orchestration_p2_multitrack-audio">
+              <source type="audio/mpeg" src="demo/orchestration/p2/Audio Export/multitrack.mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabby-tab">
+        <input type="radio" id="tab-12-2" name="tab-12">
+        <label for="tab-12-2">Piano Score (Input)</label>
+        <div class="tabby-content">
+          <div class="orchestration_p2_piano">
+            <midi-visualizer 
+              src="demo/orchestration/p2/piano.mid"
+              id="orchestration_p2_piano-visualizer">
+            </midi-visualizer>
+            <midi-player
+              src="demo/orchestration/p2/piano.mid"
+              sound-font="https://musicanticipation.github.io/soundfonts/silence" 
+              visualizer="#orchestration_p2_piano-visualizer"
+              id="orchestration_p2_piano-player">
+            </midi-player>
+            <audio id="orchestration_p2_piano-audio">
+              <source type="audio/mpeg" src="demo/orchestration/p2/Audio Export/piano.mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <p class='text-justify'></p>
+    <p class="h4"><b style="color:#6c06c0;">[Demo-13]</b> <b>Toki no Nagare ni Mi o Makase</b></p>
+    <ul>
+      <li>Genre: Pop</li>
+      <li>Length: 69 bars</li>
+      <li>BPM: 70</li>
+      <li>Instrumentation: <em style="color: #07e1e9;">Acoustic Guitar</em>, <em style="color: #ffbb78;">Jazz Guitar</em>, <em style="color: #e377c2;">Strings</em>, <em style="color: #1f77b4;">Acoustic Piano</em>, and <em style="color: #9467bd;">Electric Bass</em>.</li>
+    </ul>
+    <div class="tabs">
+      <div class="tabby-tab">
+        <input type="radio" id="tab-13-1" name="tab-13" checked>
+        <label for="tab-13-1">Multi-Track Arrangement</label>
+        <div class="tabby-content">
+          <div class="orchestration_p3_multitrack">
+            <midi-visualizer 
+              src="demo/orchestration/p3/multitrack.mid"
+              id="orchestration_p3_multitrack-visualizer">
+            </midi-visualizer>
+            <midi-player
+              src="demo/orchestration/p3/multitrack.mid"
+              sound-font="https://musicanticipation.github.io/soundfonts/silence" 
+              visualizer="#orchestration_p3_multitrack-visualizer"
+              id="orchestration_p3_multitrack-player">
+            </midi-player>
+            <audio id="orchestration_p3_multitrack-audio">
+              <source type="audio/mpeg" src="demo/orchestration/p3/Audio Export/multitrack.mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabby-tab">
+        <input type="radio" id="tab-13-2" name="tab-13">
+        <label for="tab-13-2">Piano Score (Input)</label>
+        <div class="tabby-content">
+          <div class="orchestration_p3_piano">
+            <midi-visualizer 
+              src="demo/orchestration/p3/piano.mid"
+              id="orchestration_p3_piano-visualizer">
+            </midi-visualizer>
+            <midi-player
+              src="demo/orchestration/p3/piano.mid"
+              sound-font="https://musicanticipation.github.io/soundfonts/silence" 
+              visualizer="#orchestration_p3_piano-visualizer"
+              id="orchestration_p3_piano-player">
+            </midi-player>
+            <audio id="orchestration_p3_piano-audio">
+              <source type="audio/mpeg" src="demo/orchestration/p3/Audio Export/piano.mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <p class='text-justify'></p>
+    <p class="h4"><b style="color:#6c06c0;">[Demo-14]</b> <b>Suddenly Miss You so Bad</b></p>
+    <ul>
+      <li>Genre: Pop</li>
+      <li>Length: 71 bars</li>
+      <li>BPM: 70</li>
+      <li>Instrumentation: <em style="color: #e377c2;">Strings</em>, <em style="color: #ffbb78;">Electric Piano</em>, <em style="color: #17becf;">Clarinet</em>, <em style="color: #98df8a;">Choir and Voice</em>, <em style="color: #07e1e9;">Acoustic Guitar</em>, and <em style="color: #9467bd;">Electric Bass</em>.</li>
+    </ul>
+    <div class="tabs">
+      <div class="tabby-tab">
+        <input type="radio" id="tab-14-1" name="tab-14" checked>
+        <label for="tab-14-1">Multi-Track Arrangement</label>
+        <div class="tabby-content">
+          <div class="orchestration_p4_multitrack">
+            <midi-visualizer 
+              src="demo/orchestration/p4/multitrack.mid"
+              id="orchestration_p4_multitrack-visualizer">
+            </midi-visualizer>
+            <midi-player
+              src="demo/orchestration/p4/multitrack.mid"
+              sound-font="https://musicanticipation.github.io/soundfonts/silence" 
+              visualizer="#orchestration_p4_multitrack-visualizer"
+              id="orchestration_p4_multitrack-player">
+            </midi-player>
+            <audio id="orchestration_p4_multitrack-audio">
+              <source type="audio/mpeg" src="demo/orchestration/p4/Audio Export/multitrack.mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabby-tab">
+        <input type="radio" id="tab-14-2" name="tab-14">
+        <label for="tab-14-2">Piano Score (Input)</label>
+        <div class="tabby-content">
+          <div class="orchestration_p4_piano">
+            <midi-visualizer 
+              src="demo/orchestration/p4/piano.mid"
+              id="orchestration_p4_piano-visualizer">
+            </midi-visualizer>
+            <midi-player
+              src="demo/orchestration/p4/piano.mid"
+              sound-font="https://musicanticipation.github.io/soundfonts/silence" 
+              visualizer="#orchestration_p4_piano-visualizer"
+              id="orchestration_p4_piano-player">
+            </midi-player>
+            <audio id="orchestration_p4_piano-audio">
+              <source type="audio/mpeg" src="demo/orchestration/p4/Audio Export/piano.mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <p class='text-justify'></p>
+    <p class="h4"><b style="color:#6c06c0;">[Demo-15]</b> <b>Floral Sea</b></p>
+    <ul>
+      <li>Genre: Pop</li>
+      <li>Length: 80 bars</li>
+      <li>BPM: 75</li>
+      <li>Instrumentation: <em style="color: #ffbb78;">Electric Piano</em>, <em style="color: #2ca02c;">Jazz Guitar</em>, <em style="color: #07e1e9;">Acoustic Guitar</em>, <em style="color: #98df8a;">Choir and Voice</em>, <em style="color: #8c564b;">Violin</em>, and <em style="color: #9467bd;">Electric Bass</em>.</li>
+    </ul>
+    <div class="tabs">
+      <div class="tabby-tab">
+        <input type="radio" id="tab-15-1" name="tab-15" checked>
+        <label for="tab-15-1">Multi-Track Arrangement</label>
+        <div class="tabby-content">
+          <div class="orchestration_p5_multitrack">
+            <midi-visualizer 
+              src="demo/orchestration/p5/multitrack.mid"
+              id="orchestration_p5_multitrack-visualizer">
+            </midi-visualizer>
+            <midi-player
+              src="demo/orchestration/p5/multitrack.mid"
+              sound-font="https://musicanticipation.github.io/soundfonts/silence" 
+              visualizer="#orchestration_p5_multitrack-visualizer"
+              id="orchestration_p5_multitrack-player">
+            </midi-player>
+            <audio id="orchestration_p5_multitrack-audio">
+              <source type="audio/mpeg" src="demo/orchestration/p5/Audio Export/multitrack.mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabby-tab">
+        <input type="radio" id="tab-15-2" name="tab-15">
+        <label for="tab-15-2">Piano Score (Input)</label>
+        <div class="tabby-content">
+          <div class="orchestration_p5_piano">
+            <midi-visualizer 
+              src="demo/orchestration/p5/piano.mid"
+              id="orchestration_p5_piano-visualizer">
+            </midi-visualizer>
+            <midi-player
+              src="demo/orchestration/p5/piano.mid"
+              sound-font="https://musicanticipation.github.io/soundfonts/silence" 
+              visualizer="#orchestration_p5_piano-visualizer"
+              id="orchestration_p5_piano-player">
+            </midi-player>
+            <audio id="orchestration_p5_piano-audio">
+              <source type="audio/mpeg" src="demo/orchestration/p5/Audio Export/piano.mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="container no-gutter small-padding">
     <p class="h1"><hr class="primary"></p>
     <h5>This page uses <a href="https://cifkao.github.io/html-midi-player/" target="_blank">html-midi-player</a> for MIDI visiualization and <a href="https://www.native-instruments.com/en/specials/komplete/kontakt-factory-library-2/" target="_blank">Kontakt Factory Library 2</a> for MIDI-to-audio synthesis.</h5>
@@ -1227,7 +1520,7 @@ for (i_vis = 0; i_vis < visualizers.length; i_vis++) {
   noteHeight: 2.5,
   pixelsPerTimeStep: 20,
   minPitch: 32,
-  maxPitch: 84,
+  maxPitch: 96,
   };
 }
 

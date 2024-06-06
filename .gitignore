@@ -5,3 +5,6 @@ _posts/
 *.cwp
 *.pyc
 *.py
+demo/orchestration/p3/
+demo/orchestration/p4/
+demo/orchestration/p5/
