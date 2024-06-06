@@ -1,7 +1,5 @@
 _site/
 .jekyll-cache/
-archive/
-_posts/
 *.cwp
 *.pyc
 *.py
