@@ -3,6 +3,3 @@ _site/
 *.cwp
 *.pyc
 *.py
-demo/ablation/p3
-demo/ablation/p4
-demo/ablation/p5
